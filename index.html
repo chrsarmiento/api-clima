@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>API Clima</title>
+
+        <!--link bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css"/>
+
+        <!--CSS propio-->
+        <!-- <link rel="stylesheet" href="styles.css"/> -->
+
+        <!-- JS Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+        
+    </head>
+    <body class="">
+        <div class="container">
+            <div class="row text-center bg-dark text-white border-radius-3 p-5 mb-4">
+                <h1 class="display-1">Mi aplicación del Clima!!!</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <form id="my_form" action="">
+                                <div class="input-group">
+                                    <input class="form-control" placeholder="Ingrese nombre ciudad" type="text" name="ciudad_buscada" id="ciudad_buscada">
+                                    <button class="btn btn-dark" type="button" id="buscar_ciudad">Buscar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div id="info_weather" class="col-10">
+                                    <!--Información del tiempo-->
+                                </div>
+                                <div id="icon_weather" class="col-2">
+                                    <!--Imagen-->
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="card-footer">
+                            <p class="copyright text-muted">Copyright &copy; 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb-4 text-center">
+                    <img class="img-fluid d-none d-md-block" src="http://picsum.photos/600/250" alt="Imagen aleatoria">
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
